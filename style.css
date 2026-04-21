@@ -349,14 +349,34 @@ input, textarea, select {
   align-items: center;
   gap: 0.625rem;
   flex-shrink: 0;
+  transition: opacity var(--duration-fast);
+}
+
+.nav-logo:hover { opacity: 0.8; }
+
+.logo-mark {
+  width: clamp(32px, 5vw, 40px);
+  height: clamp(32px, 5vw, 40px);
+  object-fit: contain;
+  display: block;
 }
 
 .logo-text {
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
   font-weight: 700;
   letter-spacing: 0.08em;
   color: var(--text-primary);
+}
+
+/* Responsive logo on mobile */
+@media (max-width: 640px) {
+  .logo-text {
+    display: none;
+  }
+  .nav-logo {
+    gap: 0;
+  }
 }
 
 .nav-links {
@@ -409,12 +429,12 @@ input, textarea, select {
   background: var(--blue-pale);
 }
 
-.lang-divider { opacity: 0.4; }
+.lang-divider { color: rgba(58, 74, 107, 0.4); }
 
 /* Active state per language */
-.lang-ar { opacity: 0.5; }
-body.lang-ar .lang-en { opacity: 0.5; }
-body.lang-ar .lang-ar { opacity: 1; }
+.lang-ar { color: rgba(58, 74, 107, 0.5); }
+body.lang-ar .lang-en { color: rgba(58, 74, 107, 0.5); }
+body.lang-ar .lang-ar { color: var(--blue-primary); }
 
 /* Mobile Menu Button */
 .mobile-menu-btn {
