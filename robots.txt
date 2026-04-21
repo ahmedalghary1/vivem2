@@ -1,0 +1,18 @@
+# VIVEM Agency — robots.txt
+# https://www.vivem.agency/
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Block any admin/backend paths (adjust for your CMS/stack)
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /api/
+Disallow: /*.json$
+
+# Sitemap location
+Sitemap: https://www.vivem.agency/sitemap.xml
+
+# Crawl-delay is optional; remove if using a fast CDN
+# Crawl-delay: 1

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  VIVEM Agency — Sitemap
+  Production URL: https://www.vivem.agency/
+  
+  SEO NOTE:
+  In production, use:
+  - / for English (canonical)
+  - /ar/ for Arabic version
+  
+  Add xhtml:link alternates for each URL to signal hreflang to Google.
+-->
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage — English (default) -->
+  <url>
+    <loc>https://www.vivem.agency/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vivem.agency/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.vivem.agency/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.vivem.agency/"/>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.vivem.agency/og-image.jpg</image:loc>
+      <image:title>VIVEM — Premium Global Marketing Agency</image:title>
+    </image:image>
+  </url>
+
+  <!-- Homepage — Arabic -->
+  <url>
+    <loc>https://www.vivem.agency/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.vivem.agency/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.vivem.agency/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.vivem.agency/"/>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Services page (when expanded to separate pages) -->
+  <!-- Add service-specific URLs here in production -->
+  <!-- Example:
+  <url>
+    <loc>https://www.vivem.agency/services/branding/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  -->
+
+  <!-- Portfolio / Work page -->
+  <!-- Add portfolio pages here in production -->
+
+  <!-- About page (if separate) -->
+  <!-- Contact page (if separate) -->
+
+</urlset>
